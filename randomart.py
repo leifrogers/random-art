@@ -137,9 +137,11 @@ def makeimage(numberofimages=20):
             eqnsFile.write("green = " + str(greenexpression) + "\n")
             eqnsFile.write("blue = " + str(blueexpression) + "\n")
             eqnsFile.write("black = " + str(blackexpression) + "\n\n")
+            print("equation list has been made")
             # image = plotcolor(redexpression, greenexpression, blueexpression)
             image = plotcolor(redexpression, greenexpression, blueexpression, blackexpression)
             image.save("img/imgJ-" + str(i) + ".jpg", "JPEG")
+            print("Image " + str(i) + " has been made")
             # image.save("img/imgP-" + str(i) + ".png", "PNG")
 
 
