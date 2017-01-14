@@ -2,12 +2,12 @@ import random
 import math
 from PIL import Image
 
-
 random.seed()
 
 
 class X:
-    def eval(self, x, y):
+    @staticmethod
+    def eval(x, y):
         return x
 
     def __str__(self):
@@ -15,7 +15,8 @@ class X:
 
 
 class Y:
-    def eval(self, x, y):
+    @staticmethod
+    def eval(x, y):
         return y
 
     def __str__(self):
@@ -24,7 +25,7 @@ class Y:
 
 class SinPi:
     def __init__(self, prob):
-        self.arg = buildExpr(prob * prob)
+        self.arg = buildexpression(prob * prob)
 
     def __str__(self):
         return "sin(pi*" + str(self.arg) + ")"
@@ -35,7 +36,7 @@ class SinPi:
 
 class ArcSinPi:
     def __init__(self, prob):
-        self.arg = buildExpr(prob * prob)
+        self.arg = buildexpression(prob * prob)
 
     def __str__(self):
         return "arcsin(pi*" + str(self.arg) + ")"
@@ -46,7 +47,7 @@ class ArcSinPi:
 
 class CosPi:
     def __init__(self, prob):
-        self.arg = buildExpr(prob * prob)
+        self.arg = buildexpression(prob * prob)
 
     def __str__(self):
         return "cos(pi*" + str(self.arg) + ")"
@@ -57,7 +58,7 @@ class CosPi:
 
 class TanPi:
     def __init__(self, prob):
-        self.arg = buildExpr(prob * prob)
+        self.arg = buildexpression(prob * prob)
 
     def __str__(self):
         return "tan(pi*" + str(self.arg) + ")"
@@ -68,8 +69,8 @@ class TanPi:
 
 class Times:
     def __init__(self, prob):
-        self.lhs = buildExpr(prob * prob)
-        self.rhs = buildExpr(prob * prob)
+        self.lhs = buildexpression(prob * prob)
+        self.rhs = buildexpression(prob * prob)
 
     def __str__(self):
         return "(" + str(self.lhs) + "*" + str(self.rhs) + ")"
@@ -77,67 +78,69 @@ class Times:
     def eval(self, x, y):
         return self.lhs.eval(x, y) * self.rhs.eval(x, y)
 
+
 class Divide:
     def __init__(self, prob):
-        self.arg = buildExpr(prob * prob)
+        self.arg = buildexpression(prob * prob)
 
     def __str__(self):
         return str(self.arg) + "/ 2"
 
     def eval(self, x, y):
-        return self.arg.eval(x, y)/2
+        return self.arg.eval(x, y) / 2
 
 
-def buildExpr(prob=.9):
+def buildexpression(prob=.99):
     if random.random() < prob:
         return random.choice([SinPi, CosPi, ArcSinPi, Times, Divide])(prob)
     else:
         return random.choice([X, Y])()
 
 
-def plotIntensity(exp, pixelsPerUnit=600):
-    canvasWidth = 2 * pixelsPerUnit + 1
-    canvas = Image.new("L", (canvasWidth, canvasWidth))
+def plotintensity(exp, pixelsperunit=600):
+    canvaswidth = 2 * pixelsperunit + 1
+    canvas = Image.new("L", (canvaswidth, canvaswidth))
 
-    for py in range(canvasWidth):
-        for px in range(canvasWidth):
+    for py in range(canvaswidth):
+        for px in range(canvaswidth):
             # Convert pixel location to [-1,1] coordinates
-            x = float(px - pixelsPerUnit) / pixelsPerUnit
-            y = -float(py - pixelsPerUnit) / pixelsPerUnit
+            x = float(px - pixelsperunit) / pixelsperunit
+            y = -float(py - pixelsperunit) / pixelsperunit
             z = exp.eval(x, y)
             # Scale [-1,1] result to [0,255].
             intensity = int(z * 127.5 + 127.5)
-            #intensity = int(z * 127.5 + 50)
+            # intensity = int(z * 127.5 + 50)
             canvas.putpixel((px, py), intensity)
 
     return canvas
 
 
-def plotColor(redExp, greenExp, blueExp, blackExp, pixelsPerUnit=600):
-    redPlane = plotIntensity(redExp, pixelsPerUnit)
-    greenPlane = plotIntensity(greenExp, pixelsPerUnit)
-    bluePlane = plotIntensity(blueExp, pixelsPerUnit)
-    blackPlane = plotIntensity(blackExp, pixelsPerUnit)
-    #return Image.merge("RGB", (redPlane, greenPlane, bluePlane))
-    return Image.merge("CMYK", (redPlane, greenPlane, bluePlane, blackPlane))
+def plotcolor(redexpression, greenexpression, blueexpression, blackexpression, pixelsperunit=600):
+    redplane = plotintensity(redexpression, pixelsperunit)
+    greenplane = plotintensity(greenexpression, pixelsperunit)
+    blueplane = plotintensity(blueexpression, pixelsperunit)
+    blackplane = plotintensity(blackexpression, pixelsperunit)
+    # return Image.merge("RGB", (redplane, greenplane, blueplane))
+    return Image.merge("CMYK", (redplane, greenplane, blueplane, blackplane))
 
-def makeImage(numPics=20):
+
+def makeimage(numberofimages=20):
     with open("eqns.txt", 'w') as eqnsFile:
-        for i in range(numPics):
-            redExp = buildExpr(random.uniform(.1, .9))
-            greenExp = buildExpr(random.uniform(.1, .9))
-            blueExp = buildExpr(random.uniform(.8, 1))
-            blackExp = buildExpr(random.uniform(.4, 1))
+        for i in range(numberofimages):
+            redexpression = buildexpression(random.uniform(.1, .9))
+            greenexpression = buildexpression(random.uniform(.1, .9))
+            blueexpression = buildexpression(random.uniform(.8, 1))
+            blackexpression = buildexpression(random.uniform(.4, 1))
 
             eqnsFile.write("img" + str(i) + ":\n")
-            eqnsFile.write("red = " + str(redExp) + "\n")
-            eqnsFile.write("green = " + str(greenExp) + "\n")
-            eqnsFile.write("blue = " + str(blueExp) + "\n")
-            eqnsFile.write("black = " + str(blackExp) + "\n\n")
-            #image = plotColor(redExp, greenExp, blueExp)
-            image = plotColor(redExp, greenExp, blueExp, blackExp)
-            image.save("psy2/img-T" + str(i) + ".jpg", "JPEG")
-            #image.save("psy2/img-S" + str(i) + ".png", "PNG")
+            eqnsFile.write("red = " + str(redexpression) + "\n")
+            eqnsFile.write("green = " + str(greenexpression) + "\n")
+            eqnsFile.write("blue = " + str(blueexpression) + "\n")
+            eqnsFile.write("black = " + str(blackexpression) + "\n\n")
+            # image = plotcolor(redexpression, greenexpression, blueexpression)
+            image = plotcolor(redexpression, greenexpression, blueexpression, blackexpression)
+            image.save("img/imgJ-" + str(i) + ".jpg", "JPEG")
+            # image.save("img/imgP-" + str(i) + ".png", "PNG")
 
 
-makeImage(10)
+makeimage(10)
