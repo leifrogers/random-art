@@ -1,250 +1,846 @@
 img0:
-red = sin(pi*sin(pi*cos(pi*sin(pi*sin(pi*y))*cos(pi*x*x*sin(pi*cos(pi*x))))))
-green = cos(pi*y*cos(pi*x)*x*cos(pi*x*x)*sin(pi*y)*cos(pi*cos(pi*cos(pi*y))))
-blue = cos(pi*cos(pi*cos(pi*cos(pi*y*cos(pi*x)*sin(pi*sin(pi*x))))))
+red = sin(pi*x)
+green = x
+blue = y
+black = acos(pi*y)/2
 
 img1:
-red = sin(pi*sin(pi*x)*sin(pi*x)*x)*sin(pi*sin(pi*cos(pi*x*sin(pi*x))))*cos(pi*x)*sin(pi*x)*sin(pi*sin(pi*cos(pi*y)))
-green = sin(pi*cos(pi*sin(pi*sin(pi*y*y))*y*y*cos(pi*y*x)*y*sin(pi*x*y*y)))
-blue = sin(pi*cos(pi*cos(pi*sin(pi*x)*cos(pi*y)*x*cos(pi*sin(pi*y*sin(pi*y))*y))))
+red = x
+green = x
+blue = y
+black = tan(pi*y)
 
 img2:
-red = cos(pi*x)*cos(pi*cos(pi*sin(pi*sin(pi*x))))*cos(pi*cos(pi*sin(pi*x)))*cos(pi*cos(pi*x*x)*x*cos(pi*y))
-green = sin(pi*cos(pi*cos(pi*sin(pi*x)*y*y))*cos(pi*cos(pi*y))*cos(pi*sin(pi*x)))*cos(pi*y*y*sin(pi*sin(pi*cos(pi*x))))
-blue = cos(pi*cos(pi*y*cos(pi*cos(pi*x))))*cos(pi*cos(pi*x))*x*sin(pi*cos(pi*sin(pi*sin(pi*cos(pi*sin(pi*y*y))))))
+red = x
+green = x
+blue = tan(pi*y)
+black = tan(pi*cos(pi*arcsin(pi*x)))
 
 img3:
-red = sin(pi*sin(pi*sin(pi*cos(pi*x))))*sin(pi*cos(pi*y*y*x))*y*y*sin(pi*y)*sin(pi*x)*y*cos(pi*sin(pi*y))*sin(pi*x)
-green = sin(pi*x*y*sin(pi*cos(pi*sin(pi*cos(pi*x)))*sin(pi*x)*cos(pi*cos(pi*sin(pi*x)))))
-blue = cos(pi*sin(pi*sin(pi*x)))*sin(pi*x)*cos(pi*x)*sin(pi*y)*sin(pi*y)*x*sin(pi*y)*y*sin(pi*sin(pi*y*y*x)*cos(pi*y))
+red = y
+green = y
+blue = acos(pi*x)
+black = tan(pi*tan(pi*y))
 
 img4:
-red = cos(pi*sin(pi*cos(pi*cos(pi*y*x)))*sin(pi*cos(pi*cos(pi*y))))
-green = cos(pi*sin(pi*cos(pi*sin(pi*y)))*sin(pi*cos(pi*sin(pi*y)))*cos(pi*y*y*sin(pi*x))*x)*sin(pi*cos(pi*sin(pi*cos(pi*cos(pi*cos(pi*y))))))
-blue = cos(pi*x*x*sin(pi*x*x)*cos(pi*x)*sin(pi*y)*cos(pi*x*cos(pi*x))*cos(pi*x*y*x*y)*sin(pi*cos(pi*y)*y*x*sin(pi*x*x)))
+red = sin(pi*x)
+green = (y*y)
+blue = y
+black = sin(pi*y)
 
 img5:
-red = sin(pi*sin(pi*sin(pi*sin(pi*y*y)))*cos(pi*sin(pi*cos(pi*x)*x*sin(pi*sin(pi*y)))))
-green = cos(pi*cos(pi*cos(pi*sin(pi*cos(pi*y*cos(pi*y))))))
-blue = sin(pi*sin(pi*y)*y*y*sin(pi*x)*cos(pi*x)*cos(pi*x))
+red = acos(pi*y)
+green = acos(pi*x)
+blue = x
+black = x
 
 img6:
-red = sin(pi*y)
-green = cos(pi*y*cos(pi*sin(pi*sin(pi*y)))*cos(pi*cos(pi*y)))*cos(pi*cos(pi*sin(pi*cos(pi*y))))
-blue = sin(pi*cos(pi*cos(pi*x*y)*cos(pi*y*cos(pi*cos(pi*x)))))
+red = x
+green = x
+blue = y
+black = tan(pi*y)
 
 img7:
-red = sin(pi*cos(pi*cos(pi*sin(pi*sin(pi*x)*x*x))*cos(pi*cos(pi*cos(pi*x)))*sin(pi*cos(pi*sin(pi*y)))))
-green = sin(pi*cos(pi*cos(pi*sin(pi*sin(pi*sin(pi*x))))))
-blue = y
+red = sin(pi*x)
+green = sin(pi*x)
+blue = arcsin(pi*sin(pi*cos(pi*x)))
+black = x/2
 
 img8:
-red = cos(pi*sin(pi*cos(pi*cos(pi*sin(pi*sin(pi*x)))))*cos(pi*sin(pi*y))*sin(pi*x))
-green = cos(pi*cos(pi*sin(pi*y)))*y*cos(pi*sin(pi*cos(pi*cos(pi*x)*sin(pi*sin(pi*y)))))
-blue = cos(pi*cos(pi*cos(pi*sin(pi*sin(pi*x))*cos(pi*sin(pi*x*y)))))
+red = acos(pi*y)
+green = cos(pi*x)
+blue = x
+black = y/2/2
 
 img9:
-red = sin(pi*cos(pi*y))*cos(pi*y)*sin(pi*sin(pi*y)*cos(pi*x)*cos(pi*sin(pi*sin(pi*x)))*cos(pi*sin(pi*x)))*cos(pi*sin(pi*y*y*y)*x*sin(pi*sin(pi*sin(pi*y))))
-green = cos(pi*cos(pi*sin(pi*y*x*x))*sin(pi*y))
-blue = sin(pi*cos(pi*cos(pi*cos(pi*y)*y*sin(pi*x))*y))
+red = x
+green = sin(pi*x)
+blue = acos(pi*acos(pi*x))
+black = arcsin(pi*y)/2
 
 img10:
-red = cos(pi*cos(pi*cos(pi*sin(pi*cos(pi*x*y)))))
-green = cos(pi*x*sin(pi*sin(pi*x)))*cos(pi*cos(pi*sin(pi*x*y)*cos(pi*cos(pi*cos(pi*y)))))
-blue = sin(pi*cos(pi*sin(pi*y)*sin(pi*cos(pi*x))))*sin(pi*x*cos(pi*x)*sin(pi*y)*sin(pi*cos(pi*x)))
+red = (x*x)
+green = acos(pi*y)
+blue = (y*y)
+black = y
 
 img11:
-red = cos(pi*sin(pi*cos(pi*cos(pi*cos(pi*sin(pi*y)*x))))*sin(pi*cos(pi*sin(pi*y)))*cos(pi*cos(pi*sin(pi*y)*y)))
-green = cos(pi*cos(pi*x))
-blue = sin(pi*sin(pi*cos(pi*sin(pi*cos(pi*cos(pi*x)*y))))*cos(pi*cos(pi*sin(pi*sin(pi*y)*sin(pi*sin(pi*y))))))
+red = sin(pi*x)
+green = cos(pi*sin(pi*y))
+blue = y
+black = x
 
 img12:
-red = sin(pi*cos(pi*x))*cos(pi*x)*cos(pi*sin(pi*y))*cos(pi*x*cos(pi*x)*cos(pi*cos(pi*cos(pi*y)*y*x)))*y
-green = cos(pi*sin(pi*cos(pi*sin(pi*cos(pi*x)))))
-blue = cos(pi*x)*cos(pi*cos(pi*sin(pi*x)))
+red = x/2
+green = y
+blue = (y*y)
+black = y
 
 img13:
-red = sin(pi*sin(pi*cos(pi*cos(pi*y*cos(pi*y))*sin(pi*cos(pi*y*y)*y))))
-green = cos(pi*sin(pi*cos(pi*sin(pi*y)*y*sin(pi*x))*sin(pi*sin(pi*x))))
-blue = sin(pi*sin(pi*cos(pi*sin(pi*sin(pi*x)))))*cos(pi*y*sin(pi*y*sin(pi*x))*cos(pi*y)*sin(pi*cos(pi*x)))*cos(pi*cos(pi*cos(pi*cos(pi*sin(pi*x)*y))))
+red = x
+green = y
+blue = tan(pi*y)
+black = cos(pi*(y*x))
 
 img14:
-red = sin(pi*sin(pi*cos(pi*x)*x*sin(pi*x))*sin(pi*sin(pi*sin(pi*y)))*sin(pi*x))
-green = sin(pi*sin(pi*cos(pi*sin(pi*x)))*cos(pi*cos(pi*sin(pi*sin(pi*sin(pi*y))))))*sin(pi*cos(pi*y*y*cos(pi*x)))*sin(pi*y)*cos(pi*cos(pi*y))*cos(pi*cos(pi*x*y*x*y*sin(pi*cos(pi*y))*x))
-blue = sin(pi*sin(pi*cos(pi*sin(pi*x*y))))*cos(pi*cos(pi*sin(pi*y)))
+red = arcsin(pi*arcsin(pi*x))
+green = y
+blue = sin(pi*y)
+black = y
 
 img15:
-red = cos(pi*cos(pi*cos(pi*sin(pi*cos(pi*x)))*y*x*x))*sin(pi*sin(pi*sin(pi*x)))*cos(pi*cos(pi*x)*x)*x
-green = sin(pi*cos(pi*sin(pi*y*y)*x*sin(pi*sin(pi*y))))
-blue = cos(pi*cos(pi*x*cos(pi*y)*cos(pi*y)*x*y))*sin(pi*y)
+red = x
+green = (x*y)
+blue = tan(pi*y)
+black = sin(pi*x)
 
 img16:
-red = x
-green = sin(pi*sin(pi*cos(pi*y)*sin(pi*y)*cos(pi*cos(pi*y*y*y))*sin(pi*y)))
-blue = cos(pi*sin(pi*cos(pi*cos(pi*cos(pi*y*y))*sin(pi*cos(pi*x)))))
+red = y
+green = sin(pi*y)
+blue = arcsin(pi*sin(pi*y))
+black = sin(pi*acos(pi*y/2))
 
 img17:
-red = sin(pi*cos(pi*cos(pi*cos(pi*sin(pi*x*y*cos(pi*sin(pi*x)))))))
-green = sin(pi*sin(pi*cos(pi*cos(pi*x*x*x))*cos(pi*x*cos(pi*x*x))))
-blue = cos(pi*sin(pi*cos(pi*cos(pi*sin(pi*x)))))
+red = cos(pi*acos(pi*y/2))
+green = x
+blue = sin(pi*y)
+black = sin(pi*x)
 
 img18:
-red = sin(pi*sin(pi*cos(pi*x)*cos(pi*x)))*sin(pi*cos(pi*sin(pi*y))*sin(pi*cos(pi*cos(pi*x))))
-green = sin(pi*cos(pi*cos(pi*x))*sin(pi*sin(pi*sin(pi*x)))*cos(pi*cos(pi*cos(pi*x*y))))
-blue = cos(pi*cos(pi*cos(pi*sin(pi*y*sin(pi*y))*y*sin(pi*cos(pi*x)))))
+red = y
+green = x
+blue = x
+black = x
 
 img19:
-red = cos(pi*cos(pi*sin(pi*sin(pi*sin(pi*cos(pi*x))))*cos(pi*cos(pi*sin(pi*y)))*sin(pi*sin(pi*cos(pi*sin(pi*x))))))
-green = cos(pi*sin(pi*cos(pi*x*sin(pi*x*x))))*sin(pi*cos(pi*sin(pi*y*y*x*y)))*sin(pi*sin(pi*x))
-blue = cos(pi*sin(pi*cos(pi*sin(pi*y))))*cos(pi*cos(pi*sin(pi*sin(pi*x))))
+red = acos(pi*acos(pi*y))
+green = y
+blue = x
+black = (x*x)
 
 img20:
-red = sin(pi*sin(pi*sin(pi*cos(pi*sin(pi*cos(pi*cos(pi*x)))))))
-green = sin(pi*y)*cos(pi*cos(pi*x))
-blue = cos(pi*x*sin(pi*cos(pi*x))*cos(pi*sin(pi*x)))*cos(pi*cos(pi*cos(pi*x))*x)*sin(pi*cos(pi*x*x*y)*x)*sin(pi*x)*sin(pi*sin(pi*cos(pi*y)))*sin(pi*cos(pi*cos(pi*sin(pi*y))))
+red = tan(pi*x)
+green = sin(pi*y)
+blue = acos(pi*x)
+black = (arcsin(pi*y)*(x*x))
 
 img21:
-red = sin(pi*cos(pi*sin(pi*y*cos(pi*y)*x*x*sin(pi*x*y))))
-green = sin(pi*sin(pi*x)*sin(pi*cos(pi*cos(pi*x))))
-blue = cos(pi*cos(pi*sin(pi*cos(pi*cos(pi*x*y)))))
+red = x
+green = y
+blue = cos(pi*x)
+black = (x*x)
 
 img22:
-red = sin(pi*sin(pi*sin(pi*sin(pi*y*cos(pi*sin(pi*x))))*x))
-green = sin(pi*sin(pi*sin(pi*cos(pi*cos(pi*x))*sin(pi*y*y))))*sin(pi*sin(pi*sin(pi*sin(pi*sin(pi*sin(pi*x))))))
-blue = sin(pi*cos(pi*sin(pi*y*x*x*sin(pi*y))))
+red = y
+green = y
+blue = y
+black = sin(pi*y)
 
 img23:
-red = cos(pi*cos(pi*sin(pi*y))*cos(pi*sin(pi*cos(pi*x)))*sin(pi*sin(pi*sin(pi*x)))*sin(pi*cos(pi*cos(pi*y)))*sin(pi*sin(pi*cos(pi*cos(pi*y*x)))))
-green = cos(pi*cos(pi*cos(pi*sin(pi*cos(pi*y)*cos(pi*cos(pi*x))*cos(pi*x)))))
-blue = sin(pi*cos(pi*sin(pi*x)))
+red = x/2
+green = cos(pi*cos(pi*y))
+blue = acos(pi*x)
+black = cos(pi*x)/2
 
 img24:
-red = sin(pi*sin(pi*cos(pi*sin(pi*x)*cos(pi*sin(pi*y))*y))*cos(pi*cos(pi*y)*sin(pi*y*y)))
-green = sin(pi*y)*sin(pi*cos(pi*y))*cos(pi*cos(pi*cos(pi*x)*y*sin(pi*y)))
-blue = sin(pi*cos(pi*sin(pi*cos(pi*x))*y))*sin(pi*sin(pi*y)*sin(pi*y))*y*sin(pi*sin(pi*y*x)*sin(pi*y))
+red = y
+green = sin(pi*x)
+blue = sin(pi*x/2)/2
+black = x
 
 img25:
-red = sin(pi*cos(pi*sin(pi*y))*cos(pi*cos(pi*y*y*x*y)))
-green = cos(pi*cos(pi*sin(pi*cos(pi*x)))*cos(pi*sin(pi*cos(pi*y))*y*y*y*x*cos(pi*y)*cos(pi*y)*x))
-blue = cos(pi*sin(pi*cos(pi*sin(pi*y)*cos(pi*y)))*x*x*cos(pi*cos(pi*y*x*y*y)))
+red = acos(pi*(y*y))
+green = (y*tan(pi*y))
+blue = cos(pi*tan(pi*cos(pi*y)))
+black = tan(pi*acos(pi*sin(pi*x)))
 
 img26:
-red = cos(pi*sin(pi*sin(pi*cos(pi*cos(pi*cos(pi*y))))))
-green = sin(pi*sin(pi*cos(pi*x)*y)*y*cos(pi*sin(pi*sin(pi*x))*y)*cos(pi*cos(pi*y*y*x))*cos(pi*cos(pi*x)*sin(pi*x)*y))
-blue = cos(pi*sin(pi*cos(pi*cos(pi*y)*y))*y*sin(pi*sin(pi*sin(pi*sin(pi*y)))))
+red = x
+green = (y*acos(pi*y))
+blue = x
+black = tan(pi*y)
 
 img27:
-red = cos(pi*sin(pi*sin(pi*x*y)*cos(pi*sin(pi*y)*sin(pi*x)*x*y*y*y)))
-green = cos(pi*sin(pi*y))
-blue = sin(pi*sin(pi*sin(pi*cos(pi*x))*x*y*y*x*cos(pi*y*x*y))*sin(pi*x)*cos(pi*sin(pi*x*sin(pi*x))))
+red = tan(pi*y)
+green = y
+blue = x
+black = y
 
 img28:
-red = cos(pi*cos(pi*sin(pi*cos(pi*x))))
-green = cos(pi*sin(pi*sin(pi*cos(pi*y*cos(pi*cos(pi*x))))*cos(pi*sin(pi*x))))
-blue = cos(pi*x)*cos(pi*y)*cos(pi*cos(pi*sin(pi*sin(pi*x))*x*y*y))
+red = y
+green = sin(pi*x)
+blue = y
+black = arcsin(pi*y)
 
 img29:
-red = sin(pi*sin(pi*sin(pi*cos(pi*sin(pi*y))))*sin(pi*x*y*y)*x*y*x*y*cos(pi*x)*sin(pi*x*sin(pi*x)*sin(pi*cos(pi*y)))*cos(pi*sin(pi*sin(pi*sin(pi*sin(pi*x))))))
-green = sin(pi*sin(pi*sin(pi*y*x))*x)
-blue = cos(pi*cos(pi*sin(pi*cos(pi*y*y))))
+red = x
+green = (acos(pi*cos(pi*y))*x)
+blue = y
+black = cos(pi*y)
 
 img30:
-red = cos(pi*sin(pi*cos(pi*sin(pi*cos(pi*x))*cos(pi*cos(pi*cos(pi*y*x))))))
-green = sin(pi*sin(pi*y*y))*cos(pi*cos(pi*y)*cos(pi*x)*sin(pi*sin(pi*x)))*cos(pi*cos(pi*sin(pi*cos(pi*cos(pi*x)))))*sin(pi*cos(pi*sin(pi*x)))*sin(pi*sin(pi*sin(pi*y)))*sin(pi*x*cos(pi*x))
-blue = cos(pi*sin(pi*cos(pi*cos(pi*cos(pi*y)*x*x)*sin(pi*y))))
+red = sin(pi*arcsin(pi*y))
+green = x
+blue = (x*sin(pi*x))
+black = y
 
 img31:
-red = cos(pi*sin(pi*x)*cos(pi*y)*sin(pi*cos(pi*sin(pi*sin(pi*x)))))
-green = cos(pi*cos(pi*x*y*sin(pi*sin(pi*y))*cos(pi*cos(pi*cos(pi*x))*y)))*sin(pi*cos(pi*sin(pi*x)*cos(pi*y*sin(pi*x))))*sin(pi*cos(pi*y)*y*cos(pi*x))*y
-blue = sin(pi*cos(pi*sin(pi*cos(pi*y))*sin(pi*cos(pi*cos(pi*y*y*y)))))
+red = y/2/2/2
+green = (sin(pi*y)*acos(pi*y))
+blue = x
+black = sin(pi*y)
 
 img32:
-red = cos(pi*sin(pi*sin(pi*x))*cos(pi*cos(pi*x))*sin(pi*cos(pi*x*y)*x))
-green = y*cos(pi*sin(pi*cos(pi*cos(pi*y))*cos(pi*sin(pi*y))))*cos(pi*cos(pi*cos(pi*y)*cos(pi*cos(pi*x)))*cos(pi*cos(pi*sin(pi*y))*cos(pi*sin(pi*x)))*cos(pi*cos(pi*cos(pi*x)*sin(pi*cos(pi*sin(pi*y))))))
-blue = sin(pi*sin(pi*x*y*x*y)*cos(pi*cos(pi*x)*y)*y*sin(pi*cos(pi*sin(pi*x))*sin(pi*x)))
+red = sin(pi*x)
+green = sin(pi*y)
+blue = (arcsin(pi*y)*y)
+black = y
 
 img33:
-red = cos(pi*sin(pi*sin(pi*sin(pi*cos(pi*y*sin(pi*x))*x))))
-green = sin(pi*sin(pi*sin(pi*sin(pi*x))*sin(pi*y*x)*cos(pi*x*x*y*x*x*y)))
-blue = cos(pi*sin(pi*sin(pi*cos(pi*sin(pi*y)*sin(pi*y))))*y)
+red = y
+green = cos(pi*y)
+blue = acos(pi*y)
+black = x
 
 img34:
-red = sin(pi*cos(pi*cos(pi*sin(pi*y))))
-green = sin(pi*x)*sin(pi*cos(pi*y)*sin(pi*x)*cos(pi*x))*sin(pi*cos(pi*y*sin(pi*y*x*cos(pi*y))))
-blue = sin(pi*x)
+red = x
+green = (cos(pi*y)*arcsin(pi*y/2))
+blue = acos(pi*y)
+black = x
 
 img35:
-red = cos(pi*cos(pi*cos(pi*sin(pi*cos(pi*y)*y))))
-green = cos(pi*cos(pi*sin(pi*sin(pi*sin(pi*sin(pi*y))))))
-blue = sin(pi*sin(pi*cos(pi*cos(pi*x*y*x*y*y)))*cos(pi*cos(pi*cos(pi*x)))*x)
+red = x
+green = x
+blue = x
+black = x
 
 img36:
-red = sin(pi*cos(pi*sin(pi*sin(pi*cos(pi*y*cos(pi*y))))))*sin(pi*sin(pi*cos(pi*cos(pi*x)*cos(pi*y))))
-green = cos(pi*sin(pi*cos(pi*y)))*sin(pi*sin(pi*x*y*y*y*y)*x)*sin(pi*sin(pi*x))*x*cos(pi*x*sin(pi*y))*sin(pi*y)*sin(pi*y*y)*cos(pi*sin(pi*x))
-blue = cos(pi*sin(pi*cos(pi*sin(pi*sin(pi*sin(pi*x))))))
+red = (acos(pi*y)*tan(pi*y))/2
+green = tan(pi*x)/2
+blue = x
+black = sin(pi*y)
 
 img37:
-red = sin(pi*cos(pi*cos(pi*cos(pi*cos(pi*x)))*cos(pi*y)*cos(pi*x)*cos(pi*x)*sin(pi*cos(pi*x)))*sin(pi*sin(pi*y*x*x*sin(pi*y)))*sin(pi*y))
-green = cos(pi*sin(pi*sin(pi*y*x)*cos(pi*x*y)*x*y))*sin(pi*y*cos(pi*cos(pi*y)))*cos(pi*cos(pi*sin(pi*x)))*cos(pi*x)*sin(pi*cos(pi*x))
-blue = sin(pi*cos(pi*cos(pi*sin(pi*sin(pi*x)))))*cos(pi*sin(pi*cos(pi*cos(pi*y))))
+red = y
+green = x
+blue = x
+black = (x*x)
 
 img38:
-red = sin(pi*cos(pi*cos(pi*sin(pi*y)*cos(pi*x)*cos(pi*y)))*sin(pi*sin(pi*cos(pi*y))*sin(pi*x*x*x*y)))
-green = cos(pi*sin(pi*sin(pi*y)*x*cos(pi*y)*y*sin(pi*sin(pi*y))))
-blue = cos(pi*y)*cos(pi*cos(pi*x)*y*cos(pi*y))*sin(pi*cos(pi*y)*sin(pi*cos(pi*cos(pi*y)))*x*cos(pi*x)*x)*cos(pi*y)*cos(pi*cos(pi*y*y)*y*sin(pi*y)*y)*sin(pi*cos(pi*x))*sin(pi*y)*cos(pi*cos(pi*sin(pi*y)))
+red = sin(pi*y/2)
+green = x
+blue = cos(pi*tan(pi*y))
+black = y
 
 img39:
-red = cos(pi*sin(pi*y))
-green = sin(pi*cos(pi*sin(pi*cos(pi*sin(pi*sin(pi*x))))))
-blue = cos(pi*sin(pi*sin(pi*x)*sin(pi*sin(pi*y))*cos(pi*cos(pi*sin(pi*cos(pi*y))))))
+red = x
+green = x
+blue = arcsin(pi*y)
+black = x/2
 
 img40:
-red = cos(pi*cos(pi*cos(pi*cos(pi*x))*y*x*sin(pi*cos(pi*sin(pi*y)))))
-green = cos(pi*cos(pi*cos(pi*y)))
-blue = sin(pi*cos(pi*sin(pi*sin(pi*sin(pi*x)*y))))
+red = tan(pi*sin(pi*y)/2)
+green = cos(pi*cos(pi*x))
+blue = x
+black = x
 
 img41:
-red = sin(pi*cos(pi*cos(pi*sin(pi*sin(pi*sin(pi*x)))*sin(pi*cos(pi*cos(pi*x*y))))))
-green = sin(pi*cos(pi*x)*cos(pi*y)*cos(pi*cos(pi*cos(pi*cos(pi*y))*x)*x*x))
-blue = sin(pi*sin(pi*cos(pi*cos(pi*sin(pi*x)))))
+red = arcsin(pi*tan(pi*acos(pi*x)/2))
+green = y
+blue = x
+black = arcsin(pi*y)
 
 img42:
-red = cos(pi*cos(pi*cos(pi*x*y))*sin(pi*sin(pi*y))*sin(pi*sin(pi*cos(pi*cos(pi*x)))*y))*cos(pi*sin(pi*cos(pi*x*y*x)))*sin(pi*sin(pi*cos(pi*x*y*x)))*cos(pi*x)
-green = cos(pi*cos(pi*cos(pi*cos(pi*sin(pi*x*y*cos(pi*x))))))
-blue = cos(pi*sin(pi*sin(pi*y*x*cos(pi*y*cos(pi*sin(pi*y))))))
+red = y
+green = tan(pi*y)
+blue = y
+black = y
 
 img43:
-red = cos(pi*cos(pi*sin(pi*x)*y*x*x*y)*cos(pi*x))*cos(pi*sin(pi*y))*cos(pi*cos(pi*cos(pi*sin(pi*x)*x)))
-green = sin(pi*sin(pi*cos(pi*x*cos(pi*x*y)))*cos(pi*x)*cos(pi*cos(pi*y))*sin(pi*x)*sin(pi*y*x)*y)
-blue = sin(pi*cos(pi*y*sin(pi*y)*sin(pi*cos(pi*cos(pi*x)))*cos(pi*sin(pi*cos(pi*x*x)*y))))
+red = x
+green = (cos(pi*y)/2*x)
+blue = x
+black = acos(pi*y)
 
 img44:
-red = cos(pi*sin(pi*cos(pi*x)))*sin(pi*y*cos(pi*x)*cos(pi*cos(pi*cos(pi*x))))*sin(pi*sin(pi*sin(pi*x)*x))
-green = sin(pi*cos(pi*cos(pi*cos(pi*cos(pi*y)))*cos(pi*cos(pi*y)*sin(pi*y))))
-blue = cos(pi*cos(pi*sin(pi*cos(pi*y))*sin(pi*cos(pi*sin(pi*y)))))*sin(pi*cos(pi*cos(pi*cos(pi*y)))*sin(pi*cos(pi*sin(pi*cos(pi*x)))))
+red = y
+green = ((tan(pi*x)*y)*sin(pi*y))
+blue = sin(pi*y)
+black = (x*y)
 
 img45:
-red = cos(pi*sin(pi*cos(pi*cos(pi*y))*cos(pi*x)))*cos(pi*cos(pi*sin(pi*x)*sin(pi*x))*cos(pi*cos(pi*x*y*x)))
-green = sin(pi*cos(pi*cos(pi*y)*sin(pi*cos(pi*y))*sin(pi*sin(pi*sin(pi*y*x*sin(pi*y))))))
-blue = cos(pi*sin(pi*cos(pi*x))*cos(pi*y)*sin(pi*cos(pi*y))*cos(pi*y*x))
+red = cos(pi*x)
+green = y
+blue = y
+black = y
 
 img46:
-red = cos(pi*cos(pi*cos(pi*cos(pi*sin(pi*cos(pi*cos(pi*x)*x))))))
-green = sin(pi*cos(pi*cos(pi*x*y)*x*x*sin(pi*y)*cos(pi*y)*x)*x*sin(pi*sin(pi*y*y*cos(pi*x))))
-blue = sin(pi*cos(pi*x*sin(pi*cos(pi*y*x*x)))*cos(pi*cos(pi*sin(pi*x)*cos(pi*x))))
+red = cos(pi*arcsin(pi*y))
+green = x
+blue = y
+black = y
 
 img47:
-red = cos(pi*cos(pi*x))
-green = cos(pi*sin(pi*x))*cos(pi*x*x)*sin(pi*cos(pi*sin(pi*sin(pi*x*y))*sin(pi*y)))*sin(pi*sin(pi*y)*y*cos(pi*y*cos(pi*y))*x)*cos(pi*sin(pi*y)*cos(pi*cos(pi*sin(pi*x))))
-blue = cos(pi*cos(pi*sin(pi*cos(pi*x))*cos(pi*x)))
+red = tan(pi*x)
+green = y
+blue = tan(pi*y)
+black = cos(pi*tan(pi*x/2))
 
 img48:
-red = cos(pi*cos(pi*cos(pi*sin(pi*y))))*sin(pi*sin(pi*x))*sin(pi*x)*sin(pi*sin(pi*x*y)*sin(pi*cos(pi*x)*x*x*y)*x*sin(pi*cos(pi*x)))
-green = sin(pi*cos(pi*cos(pi*sin(pi*cos(pi*cos(pi*y)*x))*sin(pi*sin(pi*y*x)))))
-blue = sin(pi*y*sin(pi*cos(pi*cos(pi*x)*sin(pi*y)))*sin(pi*cos(pi*sin(pi*x)*x)*sin(pi*x*x)))
+red = x
+green = (sin(pi*y)*x)
+blue = sin(pi*y)
+black = acos(pi*x)/2
 
 img49:
-red = cos(pi*sin(pi*y*cos(pi*cos(pi*x)))*sin(pi*y*cos(pi*x*y)*y))
-green = sin(pi*sin(pi*x*sin(pi*y)))
-blue = cos(pi*sin(pi*sin(pi*sin(pi*sin(pi*y))*sin(pi*y)*x))*cos(pi*cos(pi*sin(pi*y))))
+red = sin(pi*x)
+green = tan(pi*x)
+blue = sin(pi*x)
+black = y
+
+img50:
+red = x
+green = sin(pi*cos(pi*x))
+blue = arcsin(pi*x)
+black = arcsin(pi*sin(pi*y/2))
+
+img51:
+red = y
+green = x
+blue = cos(pi*tan(pi*acos(pi*arcsin(pi*x))))
+black = x
+
+img52:
+red = x/2
+green = sin(pi*y)
+blue = acos(pi*x/2)
+black = y
+
+img53:
+red = y
+green = sin(pi*y)
+blue = y
+black = sin(pi*y)
+
+img54:
+red = sin(pi*x)
+green = cos(pi*(y*x))
+blue = x
+black = ((arcsin(pi*x)*tan(pi*x))*acos(pi*x))
+
+img55:
+red = x
+green = y
+blue = x
+black = arcsin(pi*x)
+
+img56:
+red = tan(pi*acos(pi*cos(pi*x)))
+green = y
+blue = y
+black = y
+
+img57:
+red = tan(pi*y)
+green = sin(pi*x/2)
+blue = cos(pi*y)/2
+black = tan(pi*cos(pi*x))
+
+img58:
+red = x
+green = sin(pi*x)
+blue = sin(pi*tan(pi*acos(pi*y)))
+black = sin(pi*x)
+
+img59:
+red = x
+green = x
+blue = cos(pi*sin(pi*x)/2)
+black = y
+
+img60:
+red = cos(pi*x)
+green = cos(pi*tan(pi*y))
+blue = x
+black = x
+
+img61:
+red = y
+green = (x*acos(pi*x))
+blue = y
+black = y
+
+img62:
+red = x
+green = x
+blue = y
+black = y
+
+img63:
+red = sin(pi*cos(pi*y))
+green = sin(pi*y)/2
+blue = cos(pi*x)
+black = cos(pi*x)/2
+
+img64:
+red = x
+green = y
+blue = x
+black = x
+
+img65:
+red = y/2
+green = y
+blue = y
+black = tan(pi*acos(pi*x))
+
+img66:
+red = cos(pi*y/2)
+green = arcsin(pi*x)
+blue = y
+black = y
+
+img67:
+red = (y*arcsin(pi*(y*arcsin(pi*y))))
+green = tan(pi*x)
+blue = y
+black = sin(pi*x)
+
+img68:
+red = y
+green = y
+blue = y
+black = x
+
+img69:
+red = x
+green = x
+blue = cos(pi*x)
+black = cos(pi*y)
+
+img70:
+red = y
+green = y
+blue = sin(pi*y/2)
+black = y
+
+img71:
+red = x/2
+green = x/2
+blue = x
+black = x
+
+img72:
+red = y
+green = arcsin(pi*acos(pi*y))
+blue = y
+black = x/2
+
+img73:
+red = y
+green = cos(pi*x)
+blue = x
+black = y
+
+img74:
+red = (cos(pi*arcsin(pi*acos(pi*acos(pi*x))))*arcsin(pi*sin(pi*acos(pi*cos(pi*x)))))
+green = y
+blue = x
+black = (x*x)
+
+img75:
+red = x
+green = (sin(pi*y)*x)
+blue = y
+black = sin(pi*acos(pi*x))
+
+img76:
+red = sin(pi*acos(pi*x))
+green = x
+blue = y
+black = y/2
+
+img77:
+red = cos(pi*x)
+green = y
+blue = sin(pi*sin(pi*y))
+black = (y*arcsin(pi*x))
+
+img78:
+red = arcsin(pi*tan(pi*cos(pi*x)))
+green = cos(pi*y)
+blue = (x*tan(pi*y))
+black = y
+
+img79:
+red = y
+green = sin(pi*arcsin(pi*x))
+blue = cos(pi*acos(pi*x)/2/2)
+black = y
+
+img80:
+red = y
+green = x
+blue = tan(pi*x)
+black = y
+
+img81:
+red = x
+green = x
+blue = arcsin(pi*x)
+black = y
+
+img82:
+red = x
+green = sin(pi*(x*y)/2)
+blue = y
+black = y
+
+img83:
+red = y
+green = sin(pi*arcsin(pi*y))
+blue = x
+black = sin(pi*x/2)
+
+img84:
+red = x
+green = y
+blue = tan(pi*y/2)
+black = ((y*sin(pi*x))*sin(pi*x))
+
+img85:
+red = cos(pi*tan(pi*x))
+green = x
+blue = x
+black = y
+
+img86:
+red = cos(pi*acos(pi*acos(pi*x)))
+green = x
+blue = y/2
+black = x
+
+img87:
+red = y
+green = sin(pi*y)
+blue = tan(pi*x)
+black = cos(pi*tan(pi*y))
+
+img88:
+red = arcsin(pi*x)
+green = x
+blue = x
+black = arcsin(pi*y)
+
+img89:
+red = tan(pi*acos(pi*x))
+green = x
+blue = (x*y)
+black = (acos(pi*acos(pi*y))*x/2)
+
+img90:
+red = y
+green = arcsin(pi*x)
+blue = x
+black = y
+
+img91:
+red = x
+green = sin(pi*y)
+blue = arcsin(pi*x)
+black = sin(pi*x)/2
+
+img92:
+red = arcsin(pi*arcsin(pi*x))
+green = y
+blue = y
+black = y
+
+img93:
+red = x
+green = x
+blue = sin(pi*y)
+black = tan(pi*x)
+
+img94:
+red = acos(pi*y)
+green = x
+blue = x
+black = acos(pi*cos(pi*x))/2
+
+img95:
+red = x
+green = x
+blue = y/2
+black = sin(pi*acos(pi*sin(pi*x)))
+
+img96:
+red = tan(pi*y)
+green = x/2
+blue = cos(pi*x)
+black = x
+
+img97:
+red = y
+green = y
+blue = x
+black = (y*x)
+
+img98:
+red = tan(pi*x)
+green = arcsin(pi*x)
+blue = y
+black = (x*y)
+
+img99:
+red = arcsin(pi*x)
+green = y
+blue = x
+black = cos(pi*(y*x/2))
+
+img100:
+red = y
+green = y
+blue = arcsin(pi*cos(pi*x))
+black = sin(pi*y)
+
+img101:
+red = x
+green = acos(pi*x)
+blue = arcsin(pi*y)
+black = y
+
+img102:
+red = acos(pi*x)
+green = acos(pi*y)
+blue = arcsin(pi*x)
+black = x
+
+img103:
+red = arcsin(pi*x)
+green = x
+blue = (x*tan(pi*y))
+black = arcsin(pi*y)
+
+img104:
+red = sin(pi*x)
+green = x
+blue = cos(pi*y)
+black = x/2
+
+img105:
+red = (x*cos(pi*x))
+green = y
+blue = (x*x)
+black = x
+
+img106:
+red = y
+green = y
+blue = (arcsin(pi*sin(pi*x))*(acos(pi*y)*y))
+black = y
+
+img107:
+red = arcsin(pi*x)/2
+green = x
+blue = x
+black = tan(pi*(x*(x*x)))
+
+img108:
+red = x
+green = sin(pi*arcsin(pi*y))
+blue = arcsin(pi*(y*tan(pi*y)))
+black = cos(pi*y)
+
+img109:
+red = arcsin(pi*x)
+green = x
+blue = cos(pi*x)
+black = (cos(pi*y)*tan(pi*x))
+
+img110:
+red = tan(pi*x)
+green = y
+blue = y
+black = y
+
+img111:
+red = y
+green = sin(pi*acos(pi*y))
+blue = tan(pi*(x*acos(pi*cos(pi*x))))
+black = y
+
+img112:
+red = y
+green = x
+blue = (y*x)
+black = acos(pi*y)
+
+img113:
+red = arcsin(pi*arcsin(pi*cos(pi*y)))/2
+green = y
+blue = y
+black = x
+
+img114:
+red = x
+green = y/2
+blue = arcsin(pi*x)
+black = x
+
+img115:
+red = y
+green = x
+blue = x
+black = cos(pi*x)
+
+img116:
+red = x
+green = x
+blue = y
+black = y
+
+img117:
+red = x
+green = y
+blue = y
+black = arcsin(pi*y)
+
+img118:
+red = tan(pi*cos(pi*y))
+green = (cos(pi*x)*y)
+blue = x
+black = y
+
+img119:
+red = y
+green = (acos(pi*y)*x)
+blue = y
+black = tan(pi*y)
+
+img120:
+red = arcsin(pi*arcsin(pi*y))
+green = (arcsin(pi*y)*cos(pi*y))
+blue = (y*y)
+black = y
+
+img121:
+red = y
+green = x
+blue = (cos(pi*(y*y))*x)
+black = sin(pi*tan(pi*y)/2)
+
+img122:
+red = x
+green = x
+blue = x
+black = y
+
+img123:
+red = y
+green = cos(pi*sin(pi*y))
+blue = sin(pi*y)
+black = acos(pi*(y*x))
+
+img124:
+red = y
+green = acos(pi*x)
+blue = y
+black = sin(pi*tan(pi*cos(pi*tan(pi*y))))/2
+
+img125:
+red = tan(pi*acos(pi*arcsin(pi*acos(pi*x))))
+green = x
+blue = x
+black = y
+
+img126:
+red = x
+green = x
+blue = cos(pi*x)
+black = acos(pi*x)
+
+img127:
+red = sin(pi*arcsin(pi*(x*y)))
+green = cos(pi*x/2)
+blue = acos(pi*x)
+black = y
+
+img128:
+red = tan(pi*y)
+green = arcsin(pi*y)/2
+blue = sin(pi*x)/2
+black = arcsin(pi*cos(pi*x))
+
+img129:
+red = tan(pi*x)
+green = acos(pi*x)
+blue = x/2
+black = arcsin(pi*x)
+
+img130:
+red = sin(pi*x)
+green = sin(pi*y)
+blue = y/2
+black = (cos(pi*x)*x)
+
+img131:
+red = y
+green = tan(pi*(acos(pi*y)*cos(pi*x)))/2
+blue = sin(pi*y)
+black = (acos(pi*x)/2*y)
+
+img132:
+red = y
+green = y
+blue = x
+black = acos(pi*tan(pi*y))
+
+img133:
+red = tan(pi*sin(pi*x))
+green = y
+blue = y
+black = y
+
+img134:
+red = y
+green = y
+blue = y
+black = (cos(pi*y)*acos(pi*tan(pi*y)))
+
+img135:
+red = acos(pi*x)/2
+green = cos(pi*y)
+blue = x
+black = cos(pi*x/2)
+
+img136:
+red = sin(pi*y)
+green = x
+blue = x
+black = tan(pi*x)
+
+img137:
+red = (y*x)
+green = (x/2*arcsin(pi*arcsin(pi*x)))
+blue = acos(pi*x)
+black = y
+
+img138:
+red = arcsin(pi*x)
+green = x
+blue = x
+black = y/2
+
+img139:
+red = x
+green = arcsin(pi*x)
+blue = cos(pi*tan(pi*x))
+black = sin(pi*x)
+
+img140:
+red = x
+green = cos(pi*y)
+blue = y
+black = (tan(pi*x)*tan(pi*acos(pi*y)))
 

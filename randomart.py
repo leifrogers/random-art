@@ -2,6 +2,15 @@ import random
 import math
 from PIL import Image
 
+
+
+
+def renormalize(n, range1, range2):
+    delta1 = range1[1] - range1[0]
+    delta2 = range2[1] - range2[0]
+    return (delta2 * (n - range1[0]) / delta1) + range2[0]
+
+
 random.seed()
 
 
@@ -56,6 +65,16 @@ class CosPi:
         return math.cos(math.pi * self.arg.eval(x, y))
 
 
+class ArcCosPi:
+    def __init__(self, prob):
+        self.arg = buildexpression(prob * prob)
+
+    def __str__(self):
+        return "acos(pi*" + str(self.arg) + ")"
+
+    def eval(self, x, y):
+        return math.acos(math.cos(math.pi * self.arg.eval(x, y)))
+
 class TanPi:
     def __init__(self, prob):
         self.arg = buildexpression(prob * prob)
@@ -73,6 +92,8 @@ class Times:
         self.rhs = buildexpression(prob * prob)
 
     def __str__(self):
+        print(self.lhs)
+        print(self.rhs)
         return "(" + str(self.lhs) + "*" + str(self.rhs) + ")"
 
     def eval(self, x, y):
@@ -82,18 +103,18 @@ class Times:
 class Divide:
     def __init__(self, prob):
         self.arg = buildexpression(prob * prob)
-
+        
     def __str__(self):
-        return str(self.arg) + "/ 2"
+        return str(self.arg) + "/2"
 
     def eval(self, x, y):
         return self.arg.eval(x, y) / 2
 
 
 def buildexpression(prob=.99):
-    if random.random() < prob:
-        return random.choice([SinPi, CosPi, ArcSinPi, Times, Divide])(prob)
-    else:
+     if random.random() < prob:
+        return random.choice([SinPi, CosPi, ArcSinPi, ArcCosPi, TanPi, Times, Divide])(prob)
+     else:
         return random.choice([X, Y])()
 
 
@@ -110,7 +131,11 @@ def plotintensity(exp, pixelsperunit=600):
             # Scale [-1,1] result to [0,255].
             intensity = int(z * 127.5 + 127.5)
             # intensity = int(z * 127.5 + 50)
-            canvas.putpixel((px, py), intensity)
+            # intensity = int(z%255)
+            # print(z)
+            # intensity = int(z * random.randint(0,255))
+            point = (px, py)
+            canvas.putpixel(point, intensity)
 
     return canvas
 
@@ -120,8 +145,16 @@ def plotcolor(redexpression, greenexpression, blueexpression, blackexpression, p
     greenplane = plotintensity(greenexpression, pixelsperunit)
     blueplane = plotintensity(blueexpression, pixelsperunit)
     blackplane = plotintensity(blackexpression, pixelsperunit)
-    # return Image.merge("RGB", (redplane, greenplane, blueplane))
-    return Image.merge("CMYK", (redplane, greenplane, blueplane, blackplane))
+    randoSelect = random.randint(0,3)
+    
+    if (randoSelect == 0):
+      return Image.merge("RGB", (redplane, greenplane, blueplane))
+    elif (randoSelect == 1):
+       return Image.merge("CMYK", (redplane, greenplane, blueplane, blackplane))
+    elif (randoSelect == 2):
+      return Image.merge("HSV", (redplane, greenplane, blueplane)).convert("RGB")  
+    else:
+      return Image.merge("YCbCr", (redplane, greenplane, blueplane))
 
 
 def makeimage(numberofimages=20):
@@ -129,8 +162,8 @@ def makeimage(numberofimages=20):
         for i in range(numberofimages):
             redexpression = buildexpression(random.uniform(.1, .9))
             greenexpression = buildexpression(random.uniform(.1, .9))
-            blueexpression = buildexpression(random.uniform(.8, 1))
-            blackexpression = buildexpression(random.uniform(.4, 1))
+            blueexpression = buildexpression(random.uniform(.1, .9))
+            blackexpression = buildexpression(random.uniform(.4, .9))
 
             eqnsFile.write("img" + str(i) + ":\n")
             eqnsFile.write("red = " + str(redexpression) + "\n")
@@ -140,9 +173,9 @@ def makeimage(numberofimages=20):
             print("equation list has been made")
             # image = plotcolor(redexpression, greenexpression, blueexpression)
             image = plotcolor(redexpression, greenexpression, blueexpression, blackexpression)
-            image.save("img/imgJ-" + str(i) + ".jpg", "JPEG")
+            image.save("img/ze800-" + str(i) + ".jpg", "JPEG")
             print("Image " + str(i) + " has been made")
-            # image.save("img/imgP-" + str(i) + ".png", "PNG")
+            # image.save("img/imgPO-" + str(i) + ".png", "PNG")
 
 
-makeimage(10)
+makeimage(800)
